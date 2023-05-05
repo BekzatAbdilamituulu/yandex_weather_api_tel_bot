@@ -1,8 +1,8 @@
 import telebot, requests, json
 
-bot = telebot.TeleBot('5438643044:AAFozgFfB3oRxcu9_alCnZr9ygzcDNncFL0')
+bot = telebot.TeleBot('Token')
 url = "https://api.weather.yandex.ru/v2/informers?lat=42.8670976&lon=74.6061824"
-headers = { "X-Yandex-API-Key": "972c7126-c5a5-4f25-8f1a-8fec42406f66"}
+headers = { "X-Yandex-API-Key": "api key"}
 
 @bot.message_handler(commands=['start'])
 def get_watherr(message):
